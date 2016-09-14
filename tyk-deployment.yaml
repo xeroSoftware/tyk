@@ -59,7 +59,7 @@ spec:
       volumes:
       - name: git-config-volume
         gitRepo:
-          repository: "http://gitlab.newcom4u.ch/tools/tyk.git"
+          repository: "https://github.com/xeroSoftware/tyk"
       - name: mongo-persistent-storage
         gcePersistentDisk:
           pdName: tyk-mongo-disk
