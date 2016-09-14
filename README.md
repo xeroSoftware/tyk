@@ -12,3 +12,6 @@ kubectl create -f tyk-deployment.yaml --namespace=prod
 kubectl create -f tyk-service.yaml --namespace=prod
 kubectl create -f tyk-volume.yaml --namespace=prod
 ´´´´
+
+Use setup.sh
+remplace 130.211.71.127 by the ip of external service
