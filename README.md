@@ -15,3 +15,10 @@ kubectl create -f tyk-volume.yaml --namespace=prod
 
 Use setup.sh
 remplace 130.211.71.127 by the ip of external service
+
+and 
+test
+
+curl -H "Authorization: null" http://130.211.71.127:8080/hotelpro4u-api/
+
+curl -H "Authorization: null" http://130.211.71.127:8080/test-api/get
