@@ -35,8 +35,7 @@ spec:
           name: git-config-volume
         command:
         - "/opt/tyk-dashboard/tyk-analytics"
-        - "--conf=/git-conf/tyk/conf/tyk_analytics.conf"
-        - "--debug"
+        - "--c=/git-conf/tyk/conf/tyk_analytics.conf"
       - name: tyk-pump
         image: tykio/tyk-pump-docker-pub:latest
         volumeMounts:
