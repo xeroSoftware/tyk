@@ -59,7 +59,7 @@ spec:
       volumes:
       - name: git-config-volume
         gitRepo:
-          repository: "https://github.com/quorak/tykio-kubernetes-deployment.git"
+          repository: "http://gitlab.newcom4u.ch/tools/tyk.git"
       - name: mongo-persistent-storage
         gcePersistentDisk:
           pdName: tyk-mongo-disk

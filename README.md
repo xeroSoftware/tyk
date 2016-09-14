@@ -8,7 +8,7 @@ Its using the official tyk.io docker containers and the config files from conf/ 
 Clone this repo and edit you conf files
 
 ´´´´
-kubectl create -f k8s/tykio-kubernetes-deployment/tyk-deployment.yaml --namespace=prod
-kubectl create -f k8s/tykio-kubernetes-deployment/tyk-service.yaml --namespace=prod
-kubectl create -f k8s/tykio-kubernetes-deployment/tyk-volume.yaml --namespace=prod
+kubectl create -f tyk-deployment.yaml --namespace=prod
+kubectl create -f tyk-service.yaml --namespace=prod
+kubectl create -f tyk-volume.yaml --namespace=prod
 ´´´´

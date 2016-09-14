@@ -1,0 +1,15 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: tyk-mongo-disk-pv-1
+  labels:
+    app: tyk
+    env: prod
+spec:
+  capacity:
+    storage: 20Gi
+  accessModes:
+    - ReadWriteOnce
+  gcePersistentDisk:
+    pdName: tyk-mongo-disk
+    fsType: ext4
