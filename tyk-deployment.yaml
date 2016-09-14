@@ -35,7 +35,7 @@ spec:
           name: git-config-volume
         command:
         - "/opt/tyk-dashboard/tyk-analytics"
-        - "--conf=/git-conf/tykio-kubernetes-deployment/conf/tyk_analytics.conf"
+        - "--conf=/git-conf/tyk/conf/tyk_analytics.conf"
         - "--debug"
       - name: tyk-pump
         image: tykio/tyk-pump-docker-pub:latest
@@ -44,7 +44,7 @@ spec:
           name: git-config-volume
         command:
         - "/opt/tyk-pump/tyk-pump"
-        - "--c=/git-conf/tykio-kubernetes-deployment/conf/tyk_pump.conf"
+        - "--c=/git-conf/tyk/conf/tyk_pump.conf"
       - name: tyk-gateway
         image: tykio/tyk-gateway:latest
         ports:
@@ -54,7 +54,7 @@ spec:
           name: git-config-volume
         command:
         - "/opt/tyk-gateway/tyk"
-        - "--conf=/git-conf/tykio-kubernetes-deployment/conf/tyk_gateway.conf"
+        - "--conf=/git-conf/tyk/conf/tyk_gateway.conf"
         - "--debug"
       volumes:
       - name: git-config-volume
